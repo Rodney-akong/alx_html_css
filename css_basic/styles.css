@@ -16,3 +16,24 @@ aside {
     flex: 1;
     overflow: auto;
 }
+.logo {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-right: 20px;
+}
+body {
+  background-color: #f3f3f3;
+  color: #222;
+}
+article {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+header ul li a {
+  color: #444;
+  font-weight: bold;
+}
+header ul li a:hover {
+  color: #ff8800;
+}
