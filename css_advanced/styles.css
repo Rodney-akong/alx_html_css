@@ -117,3 +117,131 @@ section div.main-section button{
     font-style: italic;
     margin-top: -12px;
 }
+.last-section {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    
+}
+.last-section h2 {
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+.last-section h2 span {
+    color: rgb(201, 129, 207);
+    font-weight: bold;
+}
+.cards {
+    position: relative;
+    display: flex;
+    padding: 0 100px;
+    gap: 50px;
+    justify-content: space-around;
+}
+.cards div .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+}
+.new1 .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+}
+.new div .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+}
+.cards1 {
+    display: flex;
+    gap: 5px;
+    justify-content: start
+    margin-top: 10px;
+    color: rgb(201, 129, 207);
+    align-items: center;
+}
+.cards1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.cards1 h4 {
+    font-size: 12px;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.cards1 div i {
+    color: rgb(201, 129, 207);
+    font-size: 12px;
+}
+.cards div h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 15px;   
+}
+.cards div .p1 {
+    font-size: 14px;
+    text-align: start;
+    padding-bottom: 20px;
+    opacity: 0.5;
+}
+.card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between them */
+    color: rgb(201, 129, 207);
+}
+.card-bottom p {
+    margin-left: auto; /* pushes the paragraph to the far right */
+    font-size: 10px;
+    margin-top: 30px;
+}
+.card-bottom .lasti {
+    opacity: 0.2;
+}
+.new1 {
+    position: relative;
+}
+.new1 div .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 93px;
+}
+.new2 {
+    position: relative;
+}
+.new2 div .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.new3 {
+    position: relative;
+}
+.new3 div .new_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
