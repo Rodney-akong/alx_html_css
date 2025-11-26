@@ -245,3 +245,87 @@ section div.main-section button{
     top: 50px;
     left: 100px;
 }
+.membership {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 150px;
+    padding: 90px 0;
+    
+}
+.real_membership {
+    background-color: rgb(31, 31, 54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.real_membership button {
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: rgb(201, 129, 207);
+    font-size: 10px;
+    border-radius: 15px;
+    width: 150px;
+    margin-top: 20px;
+    align-self: center;
+    position: relative;
+    top: -45px;
+}
+.real_membership h2 {
+    text-align: center;
+   padding-top: 100px;
+   font-size: 30px;
+}
+.real_membership span {
+    color: rgb(201, 129, 207);
+    font-weight: bold;
+}
+.real_membership h3 {
+    
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.real_membership p {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px;
+    
+}
+.real_membership img {
+    margin-left: 45px;
+    margin-bottom: -10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin: 30px 240px;
+    margin-bottom: 100px;
+}
+.divdiv {
+    font-weight: bold;
+    padding: 20 0px;
+   text-align: start;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.faq h2 {
+    text-align: center;
+    margin: 100px 0px;
+    font-size: 30px;
+}
+.divdiv3 {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: start;
+    margin-bottom: 80px;
+    opacity: 0.5;
+    
+}
