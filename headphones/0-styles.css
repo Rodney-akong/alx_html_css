@@ -46,12 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* End of reset.css */
+/* End of reset.css *//* scss/icons.scss */
+
+/* 1) Load the custom icon font — update the paths if your folder structure differs */
+
 body {
 	font-family: Arial, sans-serif;
 	background-image: url(media/headphones_hero_1.jpg);
 	color: #333;;
-	padding: 20px;
+	
 }
 .nav {
 	display: flex;
