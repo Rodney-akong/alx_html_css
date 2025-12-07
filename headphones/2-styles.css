@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset.css *//* scss/icons.scss */
+
+/* 1) Load the custom icon font — update the paths if your folder structure differs */
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url(media/headphones_hero_1.jpg);
+	color: white;
+    background-repeat: no-repeat;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 100px;
+	border-radius: 8px;
+}
+.nav img {
+	width: 30px;
+	height: 30px;
+}
+.nav-links {
+	display: flex;
+	gap: 15px;
+}
+.nav-links a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.nav ul a:hover {
+	color: #ff6565;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.logo img {
+	width: 40px;
+	height: 40px;
+}
+.logo h1 {
+	color: white;
+	font-weight: bolder;
+	font-size: 12px;
+}
+/* Hide checkbox (hamburger toggle) */
+#menu-toggle {
+    display: none;
+}
+/* Hamburger icon hidden by default */
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 480px) {
+
+    /* Center the logo */
+    .nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    /* Show hamburger icon on the LEFT */
+    .menu-icon {
+        display: block;
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    /* Hide menu links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+       
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 0;
+        margin-top: 10px;
+    }
+
+    /* When checkbox is checked → show dropdown menu */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
+.first_section {
+	text-align: center;
+	margin-top: 250px;
+	color: white;
+}
+.first_section h1 {
+	font-size: 22px;
+	margin-bottom: 4px;
+}
+.first_section .p1 {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.button {
+	background-color: #ff6565;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 10px;
+	margin-bottom: 30px;
+}
+.button:hover {
+	background-color: #ff4545;
+	opacity: 0.9;
+}
+.first_section .p2 {
+	font-size: 12px;
+	line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+
+.whit_background {
+    width: 100vw;                    /* full screen width */
+    margin-left: calc(50% - 50vw);   /* cancel nav/page padding */
+    background-color: white;         /* white background */
+    color: black;
+    padding: 40px 0;                 /* optional spacing inside */
+}
+
+
+.second_section {
+	margin-top: 80px;
+	text-align: center;
+	color: black;
+	background-color: white;
+	width: 100%;
+}
+.second_section .me {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+.second_section .p2 {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 10px;
+    
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 100px;
+    margin: 0 auto;
+    align-items: center;
+}
+.service .holberton_school-icon-ic_sound {
+    font-size: 50px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.service p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+}
+.clearfix_bshadow0_pbs .holberton_school-icon-ic_video{
+    font-size: 50px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.clearfix_bshadow0_pbs p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+}
+.service .holberton_school-icon-ic_music {
+    font-size: 50px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.clearfix_bshadow0_pbs .holberton_school-icon-ic_hearing {
+    font-size: 50px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.clearfix_bshadow0_pbs .holberton_school-icon-ic_hearing p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+}
+/* 3. mobile breakpoint: switch to 2 columns */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    gap: 12px;                              /* slightly smaller gap */
+  }
+}
+.stats-section {
+    margin-top: 50px;
+    padding: 0 50px;
+    background-image: url(./media/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    
+}
+.stats-section h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.stats-section .p3 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+.stats-section .container-div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    
+}
+.container-div .box img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+.box {
+    position: relative;      /* make .box the reference for absolute positioning */
+    width: fit-content;      /* optional: adjust based on your layout */
+    display: inline-block;   /* keeps boxes side-by-side */
+}
+
+.box img {
+    display: block;          /* removes gaps below the image */
+    width: 100%;             /* ensure responsiveness */
+}
+
+.text-overlay {
+    position: absolute;       
+    top: 40%;                /* move to center vertically */
+    left: 50%;               /* move to center horizontally */
+    transform: translate(-50%, -50%);  /* perfectly center */
+    text-align: center;      
+    color: white;            /* choose text color (white usually best) */
+    font-weight: bold;
+    pointer-events: none;    /* click passes through if needed */
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.text-overlay p {
+    margin: 5px 0 0;
+    font-size: 8px;
+}

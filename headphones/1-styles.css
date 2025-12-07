@@ -122,13 +122,9 @@ main {
     text-align: center;
 }
 /* 3. mobile breakpoint: switch to 2 columns */
-/* Mobile: 2 rows, 2 columns — fully centered */
 @media (max-width: 480px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr);  
-    max-width: 100%;     
-    margin: 0 auto;      
-    gap: 12px;
-    padding: 12px;
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    gap: 12px;                              /* slightly smaller gap */
   }
 }
